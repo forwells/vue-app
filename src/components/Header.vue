@@ -5,8 +5,8 @@
 				<img :src="logo.src" :alt="logo.alt" class="logo">
 			</el-col>
 			<el-col :span="18" class="menu-container">
-				<el-menu :default-active="0" class="hoa-menu" mode="horizontal">
-					<el-menu-item v-for="navItem in menu" :key="navItem.sort" :index="navItem.sort">
+				<el-menu :default-active="activeIndex" class="hoa-menu" mode="horizontal" @select="handleSelect()">
+					<el-menu-item v-for="navItem in menu" :index="navItem.sort.toString()" :key="navItem.sort.toString()">
 						<a :href="navItem.link">{{navItem.title}}</a>
 					</el-menu-item>
 				</el-menu>
@@ -24,25 +24,26 @@
 					src: "/upload/images/hoalook-font-logo.png"
 				},
 				menu: {
-					0: {
+					1: {
 						title: "Magento",
 						link: "#",
 						sort: 0,
 
 					},
-					1: {
+					2: {
 						title: "Shopify",
 						link: "",
 						sort: 1,
 					}
-				}
+				},
+				activeIndex: ""
 			}
 		},
 		
 		methods: {
-			// handleSelect(key, keyPath) {
-			// 	console.log(key, keyPath);
-			// }
+			handleSelect(key, keyPath) {
+				console.log(key, keyPath);
+			}
 		}
 	}
 </script>
