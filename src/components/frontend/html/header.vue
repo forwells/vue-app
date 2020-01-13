@@ -17,6 +17,7 @@
 
 <script>
 	export default {
+		name: 'html-header',
 		data: function() {
 			return {
 				logo: {

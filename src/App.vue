@@ -1,22 +1,22 @@
 <template>
   <div id="appclication">
     <!-- Header -->
-    <Header v-if="routeData.name != 'adminhtml'"></Header>
+    <frontendIndex v-if="routeData.name != 'adminhtml'"></frontendIndex>
     <adminHtmlPage></adminHtmlPage>
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import adminHtmlPage from '@/components/adminhtml/Page/index'
+import frontendIndex from '@/components/frontend/html/index.vue'
+// import adminHtmlPage from '@/components/adminhtml/Page/index'
 export default {
   name: 'application',
   created: ()=>{
     
   },
   components: {
-    Header,
-    adminHtmlPage
+    frontendIndex,
+    // adminHtmlPage
   },
   methods: {
     
