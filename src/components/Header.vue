@@ -26,14 +26,19 @@
 				menu: {
 					1: {
 						title: "Magento",
-						link: "#",
+						link: "/#",
 						sort: 0,
 
 					},
 					2: {
 						title: "Shopify",
-						link: "#",
+						link: "/#",
 						sort: 1,
+					},
+					3: {
+						title: "Omas",
+						link: '/omas',
+						sort: 2,
 					}
 				},
 				activeIndex: ""
