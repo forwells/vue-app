@@ -32,7 +32,7 @@
 					},
 					2: {
 						title: "Shopify",
-						link: "",
+						link: "#",
 						sort: 1,
 					}
 				},
