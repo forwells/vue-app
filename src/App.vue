@@ -1,5 +1,5 @@
 <template>
-  <div id="appclication">
+  <div id="application">
     <!-- Frontend -->
     <frontendIndex v-if="routeData.name != 'admin-index'"></frontendIndex>
     <!-- Adminhtml -->

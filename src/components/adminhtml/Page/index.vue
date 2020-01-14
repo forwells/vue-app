@@ -1,9 +1,5 @@
 <template>
-    <div class="admin-index">
-        <div>
-            {{title}}
-        </div>
-    </div>
+    <adminSection></adminSection>
 </template>
 
 <style lang="sass" scoped>
@@ -11,7 +7,7 @@
 </style>
 
 <script>
-
+import adminSection from '@/components/adminhtml/section/index'
 
 export default {
     name: 'admin-index',
@@ -20,7 +16,9 @@ export default {
             title: 'adminhtml index page'
         };
     },
-    
+    components:{
+        adminSection
+    },
     methods: {
         
     },

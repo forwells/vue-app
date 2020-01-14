@@ -6,7 +6,7 @@ import router from './router';
 // Vue.config.productionTip = false
 Vue.use(ElementUI);
 new Vue({
-  el:"#appclication",
+  el:"#application",
   router,
   render: (createElement) => {
     return createElement(App)
