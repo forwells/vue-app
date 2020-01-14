@@ -1,14 +1,15 @@
 <template>
   <div id="appclication">
-    <!-- Header -->
-    <frontendIndex v-if="routeData.name != 'adminhtml'"></frontendIndex>
-    <adminHtmlPage></adminHtmlPage>
+    <!-- Frontend -->
+    <frontendIndex v-if="routeData.name != 'admin-index'"></frontendIndex>
+    <!-- Adminhtml -->
+    <adminIndex v-if="routeData.name=='admin-index'"></adminIndex>
   </div>
 </template>
 
 <script>
 import frontendIndex from '@/components/frontend/html/index.vue'
-// import adminHtmlPage from '@/components/adminhtml/Page/index'
+import adminIndex from '@/components/adminhtml/page/index'
 export default {
   name: 'application',
   created: ()=>{
@@ -16,7 +17,7 @@ export default {
   },
   components: {
     frontendIndex,
-    // adminHtmlPage
+    adminIndex
   },
   methods: {
     

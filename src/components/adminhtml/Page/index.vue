@@ -1,5 +1,5 @@
 <template>
-    <div class="Page">
+    <div class="admin-index">
         <div>
             {{title}}
         </div>
@@ -14,7 +14,7 @@
 
 
 export default {
-    name: 'Page',
+    name: 'admin-index',
     data() {
         return {
             title: 'adminhtml index page'
