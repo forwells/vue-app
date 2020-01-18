@@ -1,3 +1,4 @@
+<!-- app 入口文件夹 -->
 <template>
   <div id="application">
     <!-- Frontend -->
