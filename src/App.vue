@@ -1,4 +1,4 @@
-<!--    -->
+<!--  app entry    -->
 <template>
   <div id="application">
     <!-- Frontend -->
