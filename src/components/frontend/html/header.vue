@@ -2,7 +2,7 @@
 	<el-header class="bg-header">
 		<el-row>
 			<el-col :span="6">
-				<img :src="logo.src" :alt="logo.alt" class="logo">
+				<a :href="logo.link"><img :src="logo.src" :alt="logo.alt" class="logo"></a>
 			</el-col>
 			<el-col :span="18" class="menu-container">
 				<el-menu :default-active="activeIndex" class="hoa-menu" mode="horizontal" @select="handleSelect()">
@@ -22,18 +22,19 @@
 			return {
 				logo: {
 					alt: "Hoalook",
-					src: "/upload/images/hoalook-font-logo.png"
+					src: "/upload/images/hoalook-font-logo.png",
+					link: "/"
 				},
 				menu: {
 					1: {
 						title: "Magento",
-						link: "/#",
+						link: "/magento",
 						sort: 0,
 
 					},
 					2: {
 						title: "Shopify",
-						link: "/#",
+						link: "/shopify",
 						sort: 1,
 					},
 					3: {

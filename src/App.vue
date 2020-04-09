@@ -9,8 +9,8 @@
 </template>
 
 <script>
-import frontendIndex from '@/components/frontend/html/index.vue'
-import adminIndex from '@/components/adminhtml/page/index'
+import frontendIndex from '@/components/frontend/Html/index.vue'
+import adminIndex from '@/components/adminhtml/Page/index.vue'
 export default {
   name: 'application',
   created: ()=>{
@@ -33,6 +33,6 @@ export default {
 
 </script>
 
-<style>
-
+<style lang="sass" scoped>
+  
 </style>

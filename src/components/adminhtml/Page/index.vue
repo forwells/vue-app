@@ -7,7 +7,7 @@
 </style>
 
 <script>
-import adminSection from '@/components/adminhtml/section/index'
+import adminSection from '@/components/adminhtml/Section/index'
 
 export default {
     name: 'admin-index',

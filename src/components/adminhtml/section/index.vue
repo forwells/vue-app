@@ -1,27 +1,30 @@
 <template>
-  <el-container class="is-vertical">
-    <sectionHeader></sectionHeader>
-    <sectionContent></sectionContent>
+  <el-container direction="vertical">
+    <el-row>
+      <SectionAside></SectionAside>
+      <SectionContent></SectionContent>
+    </el-row>
   </el-container>
 </template>
 
-<style lang="sass" scoped>
-    @import './index.scss'
+<style lang="scss" scope>
+html, #application, body, .el-container, .el-row, .el-menu{
+  height: 100%;
+}
+
 </style>
 
 <script>
-import sectionHeader from "@/components/adminhtml/section/header";
-// import sectionAside from '@/components/adminhtml/section/aside'
-import sectionContent from "@/components/adminhtml/section/content";
+import SectionAside from "@/components/adminhtml/Section/aside";
+import SectionContent from "@/components/adminhtml/Section/content";
 export default {
   name: "Section",
   data() {
     return {};
   },
   components: {
-    // sectionAside,
-    sectionHeader,
-    sectionContent
+    SectionAside,
+    SectionContent
   },
   methods: {},
   mounted() {}

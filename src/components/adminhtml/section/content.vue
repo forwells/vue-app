@@ -1,5 +1,5 @@
 <template>
-  <el-main>content</el-main>
+  <el-col :span="20">content</el-col>
 </template>
 
 <style lang="sass" scoped>

@@ -9,7 +9,7 @@
 </style>
 
 <script>
-import htmlIndex from '@/components/frontend/html/index'
+import htmlIndex from '@/components/frontend/Html/index'
 export default {
     name: 'html-index',
     data() {
