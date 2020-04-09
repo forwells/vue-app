@@ -2,9 +2,9 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 // 前台路由文件
-import FrontendIndex from '@/components/frontend/Page/index';
+import FrontendIndex from '@/components/frontend/page/index';
 // 后台路由文件
-import AdminIndex from '@/components/adminhtml/Page/index';
+import AdminIndex from '@/components/adminhtml/page/index';
 Vue.use(Router)
 
 export default new Router({

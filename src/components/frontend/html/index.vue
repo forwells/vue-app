@@ -9,7 +9,7 @@
 </style>
 
 <script>
-import Header from '@/components/frontend/Html/header'
+import Header from '@/components/frontend/html/header'
 
 export default {
     name: 'html-index',

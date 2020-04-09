@@ -8,15 +8,12 @@
 </template>
 
 <style lang="scss" scope>
-html, #application, body, .el-container, .el-row, .el-menu{
-  height: 100%;
-}
-
+@import './css/index';
 </style>
 
 <script>
-import SectionAside from "@/components/adminhtml/Section/aside";
-import SectionContent from "@/components/adminhtml/Section/content";
+import SectionAside from "@/components/adminhtml/section/templates/aside";
+import SectionContent from "@/components/adminhtml/section/templates/content";
 export default {
   name: "Section",
   data() {
