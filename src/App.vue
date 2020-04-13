@@ -25,7 +25,6 @@ export default {
   },
   computed: {
     routeData() {
-      console.log(this.$route)
       return this.$route;
     }
   }

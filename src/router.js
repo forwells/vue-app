@@ -5,6 +5,7 @@ import Router from 'vue-router'
 import FrontendIndex from '@/components/frontend/page/index';
 // 后台路由文件
 import AdminIndex from '@/components/adminhtml/page/index';
+
 Vue.use(Router)
 
 export default new Router({
